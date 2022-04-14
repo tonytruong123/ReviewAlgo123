@@ -1,5 +1,5 @@
 # The reason why it is called bubble sort is the bubble in the water
-# will go from the button to the surface of the warer
+# will go from the button to the surface of the water
 
 # [38, 9, 28, 7, 2, 15, 28]
 # For bubble sort, we gonna start with the first 2 numbers: 38, 9
