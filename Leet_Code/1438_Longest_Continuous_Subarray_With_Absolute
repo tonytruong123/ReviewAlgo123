@@ -3,12 +3,12 @@ def longestSubarray(nums, limit):
         if limit != nums[0] or limit == nums[0]:
             return 1
     count = 0
-    val_max, val_min = nums[0],nums[0]
+    val_max = 0
     for i in range(len(nums)):
         j = i + 1
         while j < len(nums):
-            val_max = max(val_max, nums[j], nums[i])
-            val_min = min(val_min, nums[j], nums[i])
+            val_max = max(nums[i:j+1])
+            val_min = min(nums[i:j+1])
             if abs(nums[j] - val_max) <= limit and abs(nums[j] - val_min) <= limit:
                 count = max(count, j - i + 1)
                 j += 1
